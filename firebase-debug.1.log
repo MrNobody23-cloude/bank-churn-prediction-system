@@ -1,0 +1,120 @@
+[debug] [2026-05-29T12:00:47.708Z] ----------------------------------------------------------------------
+[debug] [2026-05-29T12:00:47.710Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aarya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions hosting --debug
+[debug] [2026-05-29T12:00:47.710Z] CLI Version:   15.8.0
+[debug] [2026-05-29T12:00:47.710Z] Platform:      win32
+[debug] [2026-05-29T12:00:47.710Z] Node Version:  v24.13.0
+[debug] [2026-05-29T12:00:47.710Z] Time:          Fri May 29 2026 17:30:47 GMT+0530 (India Standard Time)
+[debug] [2026-05-29T12:00:47.710Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: Cannot understand what targets to deploy/serve. No targets in firebase.json match '--only functions hosting'. If you are using PowerShell make sure you place quotes around any comma-separated lists (ex: --only "functions,firestore").
+[debug] [2026-05-29T12:03:48.714Z] ----------------------------------------------------------------------
+[debug] [2026-05-29T12:03:48.716Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aarya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --debug
+[debug] [2026-05-29T12:03:48.716Z] CLI Version:   15.8.0
+[debug] [2026-05-29T12:03:48.716Z] Platform:      win32
+[debug] [2026-05-29T12:03:48.716Z] Node Version:  v24.13.0
+[debug] [2026-05-29T12:03:48.716Z] Time:          Fri May 29 2026 17:33:48 GMT+0530 (India Standard Time)
+[debug] [2026-05-29T12:03:48.716Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: No currently active project.
+To run this command, you need to specify a project. You have two options:
+- Run this command with --project <alias_or_project_id>.
+- Set an active project by running firebase use --add, then rerun this command.
+To list all the Firebase projects to which you have access, run firebase projects:list.
+To learn about active projects for the CLI, visit https://firebase.google.com/docs/cli#project_aliases
+
+
+[debug] [2026-05-29T12:04:09.415Z] ----------------------------------------------------------------------
+[debug] [2026-05-29T12:04:09.417Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\aarya\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting --project bank-churn-2026-v2 --debug
+[debug] [2026-05-29T12:04:09.417Z] CLI Version:   15.8.0
+[debug] [2026-05-29T12:04:09.417Z] Platform:      win32
+[debug] [2026-05-29T12:04:09.417Z] Node Version:  v24.13.0
+[debug] [2026-05-29T12:04:09.417Z] Time:          Fri May 29 2026 17:34:09 GMT+0530 (India Standard Time)
+[debug] [2026-05-29T12:04:09.418Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-05-29T12:04:10.581Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-05-29T12:04:10.582Z] > authorizing via signed-in user (aaryanpatel080@gmail.com)
+[debug] [2026-05-29T12:04:10.582Z] [iam] checking project bank-churn-2026-v2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2026-05-29T12:04:10.583Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:10.583Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:10.583Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bank-churn-2026-v2:testIamPermissions [none]
+[debug] [2026-05-29T12:04:10.583Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bank-churn-2026-v2:testIamPermissions  x-goog-user-project=bank-churn-2026-v2
+[debug] [2026-05-29T12:04:10.583Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bank-churn-2026-v2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-29T12:04:11.985Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bank-churn-2026-v2:testIamPermissions 200
+[debug] [2026-05-29T12:04:11.985Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bank-churn-2026-v2:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2026-05-29T12:04:11.986Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:11.986Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:11.986Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bank-churn-2026-v2 [none]
+[debug] [2026-05-29T12:04:17.293Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bank-churn-2026-v2 200
+[debug] [2026-05-29T12:04:17.294Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bank-churn-2026-v2 {"projectId":"bank-churn-2026-v2","projectNumber":"454332223915","displayName":"Bank Churn Prediction System","name":"projects/bank-churn-2026-v2","resources":{"hostingSite":"bank-churn-2026-v2"},"state":"ACTIVE","etag":"1_07f95778-288e-4e6e-a2e8-a647d3083f2a"}
+[info] 
+[info] === Deploying to 'bank-churn-2026-v2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2026-05-29T12:04:17.296Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:17.296Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:17.296Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions [none]
+[debug] [2026-05-29T12:04:17.296Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2026-05-29T12:04:20.533Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions 200
+[debug] [2026-05-29T12:04:20.534Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions {"name":"projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[bank-churn-2026-v2]: beginning deploy... 
+[info] i  hosting[bank-churn-2026-v2]: found 1 files in dist 
+[debug] [2026-05-29T12:04:20.540Z] [hosting] uploading with 200 concurrency
+[debug] [2026-05-29T12:04:20.541Z] [hosting] hash cache [ZGlzdA] not populated
+[debug] [2026-05-29T12:04:20.544Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:20.544Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:20.546Z] [hosting] hash cache [ZGlzdA] stored for 1 files
+[debug] [2026-05-29T12:04:20.546Z] [hosting][hash queue][FINAL] {"max":2,"min":2,"avg":2,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":5}
+[debug] [2026-05-29T12:04:20.546Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b:populateFiles [none]
+[debug] [2026-05-29T12:04:20.546Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b:populateFiles {"files":{"/index.html":"2d2b0c813628a70bd46d4e7ccc22c7b650055109ba37923dd6adf82a3fa68b7e"}}
+[debug] [2026-05-29T12:04:21.362Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b:populateFiles 200
+[debug] [2026-05-29T12:04:21.362Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b:populateFiles {"uploadRequiredHashes":["2d2b0c813628a70bd46d4e7ccc22c7b650055109ba37923dd6adf82a3fa68b7e"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/bank-churn-2026-v2/versions/b66a792d73c9032b/files"}
+[debug] [2026-05-29T12:04:21.363Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:21.363Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:21.363Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/bank-churn-2026-v2/versions/b66a792d73c9032b/files/2d2b0c813628a70bd46d4e7ccc22c7b650055109ba37923dd6adf82a3fa68b7e [none]
+[debug] [2026-05-29T12:04:21.363Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/bank-churn-2026-v2/versions/b66a792d73c9032b/files/2d2b0c813628a70bd46d4e7ccc22c7b650055109ba37923dd6adf82a3fa68b7e [stream]
+[debug] [2026-05-29T12:04:21.364Z] [hosting][populate queue][FINAL] {"max":820,"min":820,"avg":820,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":821}
+[debug] [2026-05-29T12:04:21.364Z] [hosting] uploads queued: 1
+[info] i  hosting: uploading new files [0/1] (0%) 
+[debug] [2026-05-29T12:04:22.765Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/bank-churn-2026-v2/versions/b66a792d73c9032b/files/2d2b0c813628a70bd46d4e7ccc22c7b650055109ba37923dd6adf82a3fa68b7e 200
+[debug] [2026-05-29T12:04:22.765Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/bank-churn-2026-v2/versions/b66a792d73c9032b/files/2d2b0c813628a70bd46d4e7ccc22c7b650055109ba37923dd6adf82a3fa68b7e [stream]
+[debug] [2026-05-29T12:04:22.766Z] [hosting][upload queue][FINAL] {"max":1403,"min":1403,"avg":1403,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1403}
+[info] i  hosting: upload complete 
+[info] +  hosting[bank-churn-2026-v2]: file upload complete 
+[debug] [2026-05-29T12:04:22.766Z] [hosting] deploy completed after 2231ms
+[debug] [2026-05-29T12:04:22.766Z] [
+  {
+    "config": {
+      "public": "dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "bank-churn-2026-v2"
+    },
+    "version": "projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b"
+  }
+]
+[info] i  hosting[bank-churn-2026-v2]: finalizing version... 
+[debug] [2026-05-29T12:04:22.767Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:22.767Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:22.768Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions/b66a792d73c9032b updateMask=status%2Cconfig
+[debug] [2026-05-29T12:04:22.768Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions/b66a792d73c9032b {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2026-05-29T12:04:23.774Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions/b66a792d73c9032b 200
+[debug] [2026-05-29T12:04:23.774Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/versions/b66a792d73c9032b {"name":"projects/454332223915/sites/bank-churn-2026-v2/versions/b66a792d73c9032b","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2026-05-29T12:04:19.020578Z","createUser":{"email":"aaryanpatel080@gmail.com"},"finalizeTime":"2026-05-29T12:04:24.051056Z","finalizeUser":{"email":"aaryanpatel080@gmail.com"}}
+[debug] [2026-05-29T12:04:23.774Z] [hosting] finalized version for bank-churn-2026-v2:[object Object]
+[info] +  hosting[bank-churn-2026-v2]: version finalized 
+[info] i  hosting[bank-churn-2026-v2]: releasing new version... 
+[debug] [2026-05-29T12:04:23.774Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:23.774Z] Checked if tokens are valid: true, expires at: 1780057708854
+[debug] [2026-05-29T12:04:23.774Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/channels/live/releases versionName=projects%2F454332223915%2Fsites%2Fbank-churn-2026-v2%2Fversions%2Fb66a792d73c9032b
+[debug] [2026-05-29T12:04:23.775Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/channels/live/releases {}
+[debug] [2026-05-29T12:04:24.546Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/bank-churn-2026-v2/channels/live/releases 200

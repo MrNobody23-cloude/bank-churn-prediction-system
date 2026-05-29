@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.env.local
+firebase-debug.log
+firebase-functions-debug.log
+*.pyc
+__pycache__
+.vercel
+.firebase
