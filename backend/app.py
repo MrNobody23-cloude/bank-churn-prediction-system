@@ -1,10 +1,10 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
 from models.churn_model import ChurnPredictor
 from data.customer_data import get_all_customers, get_customer_by_id
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 CORS(app)
 
 predictor = ChurnPredictor()
@@ -113,6 +113,14 @@ def get_stats():
         'lowRisk': low_risk,
         'churned': churned
     })
+
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def serve(path):
+    if path != "" and os.path.exists(os.path.join(app.static_folder, path)):
+        return send_from_directory(app.static_folder, path)
+    else:
+        return send_from_directory(app.static_folder, 'index.html')
 
 @app.route('/api/feature-importance', methods=['GET'])
 def get_feature_importance():

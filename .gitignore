@@ -8,3 +8,4 @@ firebase-functions-debug.log
 __pycache__
 .vercel
 .firebase
+.env*
